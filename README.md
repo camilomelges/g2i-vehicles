@@ -1,5 +1,5 @@
 # Teste para g2i
 
 1. Clonar o projeto
-2. Rodar o script do banco
-3. bin/cake server -p 8765
+3. Rodar o script do banco 'source database.sql' dentro do mysql
+4. bin/cake server -p 8765
