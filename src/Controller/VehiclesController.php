@@ -19,13 +19,17 @@ class VehiclesController extends AppController
      * @return \Cake\Http\Response|void
      */
     public function index()
-    {
+    {   
         $this->paginate = [
             'contain' => ['Brands']
         ];
+        
         $vehicles = $this->paginate($this->Vehicles);
 
-        $this->set(compact('vehicles'));
+        $this->set([
+            'vehicles' => $vehicles,
+            '_serialize' => ['vehicles']
+        ]);
     }
 
     /**

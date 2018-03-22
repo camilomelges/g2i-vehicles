@@ -22,7 +22,10 @@ class BrandsController extends AppController
     {
         $brands = $this->paginate($this->Brands);
 
-        $this->set(compact('brands'));
+        $this->set([
+            'brands' => $brands,
+            '_serialize' => ['brands']
+        ]);
     }
 
     /**
