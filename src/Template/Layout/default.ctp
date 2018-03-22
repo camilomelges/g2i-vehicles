@@ -37,8 +37,8 @@ $cakeDescription = 'g2i - veículos';
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
+    <nav class="top-bar expanded col-sm-12 no-padding no-margin" data-topbar role="navigation">
+        <ul class="title-area col-sm-3 no-padding no-margin columns">
             <li class="name">
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
