@@ -4,8 +4,7 @@
  * @var \App\Model\Entity\Vehicle $vehicle
  */
 ?>
-
-<nav class="large-3 medium-4 columns">
+<nav class="large-3 medium-4 columns new-sidebar" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit Vehicle'), ['action' => 'edit', $vehicle->id]) ?> </li>
